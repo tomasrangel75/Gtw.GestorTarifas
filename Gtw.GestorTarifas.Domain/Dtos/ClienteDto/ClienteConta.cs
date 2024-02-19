@@ -1,0 +1,32 @@
+﻿using Gtw.GestorTarifas.Domain.Models.ClienteContaInfo;
+using System;
+
+namespace Gtw.GestorTarifas.Domain.Dtos.ClienteDto
+{
+    public class ClienteConta
+    {
+        public int IdClienteConta { get; set; }
+        public int IdCliente { get; set; }
+        public CnpjCpf CnpjCpf { get; set; }
+        public int IdParceiro { get; set; }
+        public Parceiro Parceiro { get; set; }
+        public int IdAgencia { get; set; }
+        public Agencia Agencia { get; set; }
+        public int NrAgencia { get; set; }
+        public Conta Conta { get; set; }
+        public int IdModalidade { get; set; }
+        public ModalidadeConta Modalidade { get; set; }
+        public string CdModalidade { get; set; }
+        public int IdGerente { get; set; }
+        public GerenteConta Gerente { get; set; }
+        public int CdGerente { get; set; }
+        public bool FlVerificarSaldo { get; set; }
+        public float VlRecorrente { get; set; }
+        public bool FlAtivo { get; set; }
+        public DateTime DhIncl { get; set; }
+        public string CdUsuIncl { get; set; }
+        public DateTime DhAlt { get; set; }
+        public string CdUsuAlt { get; set; }
+        public int? IdProcessoBacklog { get; set; }
+    }
+}
